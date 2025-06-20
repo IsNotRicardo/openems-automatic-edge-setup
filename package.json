@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "create": "npx ts-node ./src/create-edges.ts"
+    "setup": "npx ts-node ./src/controller-api-backend.ts"
   },
   "dependencies": {
     "@playwright/test": "^1.53.1",
