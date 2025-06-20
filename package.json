@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "setup": "npx ts-node ./src/index.ts"
+    "create": "npx ts-node ./src/create-edges.ts"
   },
   "dependencies": {
     "@playwright/test": "^1.53.1",
