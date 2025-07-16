@@ -5,17 +5,18 @@ dotenv.config();
 // Ensure these variables are set in your .env file
 export const openEmsUsername: string|undefined = process.env.OPENEMS_USERNAME;
 export const openEmsPassword: string|undefined = process.env.OPENEMS_PASSWORD;
+export const openEmsUrl: string|undefined = process.env.OPENEMS_URL;
 export const openEmsConsole: string|undefined = process.env.OPENEMS_CONSOLE;
 export const websocketUrl: string|undefined = process.env.WEBSOCKET_URL;
 
-if (!openEmsUsername || !openEmsPassword || !openEmsConsole || !websocketUrl) {
+if (!openEmsUsername || !openEmsPassword || !openEmsUrl || !openEmsConsole || !websocketUrl) {
     console.error("Error: Missing OpenEMS credentials or URLs");
     process.exit(1);
 }
 
 // Define your ports and extract API keys from environment variables
 export const ports: number[] = [
-    9080, 9081, 9082, 9083, 9084, 9085, 9086, 9087, 9088, 9089, 9090, 9091, 9092, 9093, 9094, 9095
+    12280, 12281, 12282, 12283, 12284, 12285, 12286, 12287, 12288, 12289, 12290, 12291, 12292, 12293, 12294, 12295
 ];
 
 export const portsAndKeys: { [port: number]: string } = {};
